@@ -49,8 +49,6 @@ Now that I have this info, I created columns for the percentage of orders that w
 	-We can also see that a higher number of failed kickstarters happened during those same months. The success-to-failure rate also remains pretty steady throughout the year, suggesting that the time of year doesn't have much bearing on your success rate.
 
 - What can you conclude about the Outcomes based on Goals?
-
-
 	-In general, we can see that the success rate of Plays on Kickstarter had an inverse correlation to their funding goals. That is: the higher the goal, the lower the success rate.
 	-While there is a spike in the percentage of successful projects in the $35000 to $45000 dollar ranges, there is not enough information here to suggest that these projects fall outside of the trends in the dataset.
 
