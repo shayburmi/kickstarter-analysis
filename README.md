@@ -12,25 +12,25 @@ Our purpose is to determine if there is an optimal time to launch Kickstarters w
 
 ### Analysis of Outcomes Based on Launch Date
 
--In order to get this data, I first created a column in my data set to isolate the year within each start date, using this formula: <=YEAR(T2)> where T is a column of Creation Dates for fundraising projects
--After This, I created a duplicate column for "outcomes" so I could place this data in both my columns and values within a pivot table.
--Next, I created my pivot table. I set it up like ![this](resources/launch date set up.png)
+In order to get this data, I first created a column in my data set to isolate the year within each start date, using this formula: =YEAR(T2) where T is a column of Creation Dates for fundraising projects
+After This, I created a duplicate column for "outcomes" so I could place this data in both my columns and values within a pivot table.
+Next, I created my pivot table. Here is how I arranged the information ![this](launchdate_setup.png)
 	
--From here, it was a matter of creating a line graph, where the x-axis represented months, while the y-axis shows the total sum of any given outcome (success, failure, cancellation,).
-	![The graph ended up looking like this.](resources/Theater_Outcomes_vs_Launch.png)
+From here, it was a matter of creating a line graph, where the x-axis represented months, while the y-axis shows the total sum of any given outcome (success, failure, cancellation,).
+	The graph ended up looking like this.![Theater Outcomes based on Launch Date](resources/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
 
--To find this information, I first needed to create the parameters for the data. Starting with anything under $1,000, then $1,000.00 to $4,999.00, and so-on counting in increments of 5,000
--Next, I generated the number of successful, failed, and canceled projects in rows B, C, and D respectively.
--To find the sums, I used COUNTIFS formulas in each corresponding column, making sure to include the subcategory of "Plays" in our Kickstarter data being a part of the criteria
+To find this information, I first needed to create the parameters for the data. Starting with anything under $1,000, then $1,000.00 to $4,999.00, and so-on counting in increments of 5,000
+Next, I generated the number of successful, failed, and canceled projects in rows B, C, and D respectively.
+To find the sums, I used COUNTIFS formulas in each corresponding column, making sure to include the subcategory of "Plays" in our Kickstarter data being a part of the criteria
 	-For Successful projects: <=COUNTIFS(Kickstarter!$F:$F,"successful",Kickstarter!$D:$D,"<=1000",Kickstarter!$S:$S,"plays")>
 	-Failed: <=COUNTIFS(Kickstarter!$F:$F,"failed",Kickstarter!$D:$D,"<=1000",Kickstarter!$S:$S,"plays")>
 	-Canceled: <=COUNTIFS(Kickstarter!$F:$F,"canceled",Kickstarter!$D:$D,"<=1000",Kickstarter!$S:$S,"plays")>
 	**These formulas were adjusted to include numbers within the ranges in each column (eg, <=COUNTIFS(Kickstarter!$F:$F,"successful",Kickstarter!$D:$D,">=1000",Kickstarter!$D:$D,"<=4999",Kickstarter!$S:$S,"plays")> for successful projects, and so on.)
 
--Next, using the formula <=SUM(B2:D2)>, I calculated the total number of projects per funding goal level
--Now that I have this info, I created columns for the percentage of orders that were successful, failed, and canceled
+Next, using the formula <=SUM(B2:D2)>, I calculated the total number of projects per funding goal level
+Now that I have this info, I created columns for the percentage of orders that were successful, failed, and canceled
 	-To determine the percentages, I used the following formulas:
 		-Successful: <=ROUND(B2/$E2,3)>
 		-Failed: <=ROUND(C2/$E2,3)>
