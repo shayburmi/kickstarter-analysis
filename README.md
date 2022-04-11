@@ -64,27 +64,27 @@ Our purpose is to determine if there is an optimal time to launch Kickstarters w
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
 	
-	-We can see that Theater Kickstarters that launch in the summer months, especially May, have a higher overall success rate than the remainder of the year.
+	We can see that Theater Kickstarters that launch in the summer months, especially May, have a higher overall success rate than the remainder of the year.
 
-	-We can also see that a higher number of failed kickstarters happened during those same months. The success-to-failure rate also remains pretty steady throughout the year, suggesting that the time of year doesn't have much bearing on your success rate.
+	We can also see that a higher number of failed kickstarters happened during those same months. The success-to-failure rate also remains pretty steady throughout the year, suggesting that the time of year doesn't have much bearing on your success rate.
 
 - What can you conclude about the Outcomes based on Goals?
 
-		-In general, we can see that the success rate of Plays on Kickstarter had an inverse correlation to their funding goals. That is: the higher the goal, the lower the success rate.
+	In general, we can see that the success rate of Plays on Kickstarter had an inverse correlation to their funding goals. That is: the higher the goal, the lower the success rate.
 
-		-While there is a spike in the percentage of successful projects in the $35000 to $45000 dollar ranges, there is not enough information here to suggest that these projects fall outside of the trends in the dataset.
+	While there is a spike in the percentage of successful projects in the $35000 to $45000 dollar ranges, there is not enough information here to suggest that these projects fall outside of the trends in the dataset.
 
 - What are some limitations of this dataset?
 
-		-This data does not give us enough info with regard to location. While we can take a look at the country of origin, we can't drill into what kind of community these projects are taking place in. For instance, a funding project for a play in a large city like New York will perform differently than a project in rural Iowa. With more datapoints, we would be able to steer the client toward the appropriate time window and funding goal.
+	This data does not give us enough info with regard to location. While we can take a look at the country of origin, we can't drill into what kind of community these projects are taking place in. For instance, a funding project for a play in a large city like New York will perform differently than a project in rural Iowa. With more datapoints, we would be able to steer the client toward the appropriate time window and funding goal.
 	
-		-Another shortcoming is that there is no accounting for genre within the data. As the arts can vary in support based on subject matter, it seems like a missed opportunity to see whether there are trends related to whether one genre may outperform others. This could also help us to see what time of year is best to produce which genre.
+	Another shortcoming is that there is no accounting for genre within the data. As the arts can vary in support based on subject matter, it seems like a missed opportunity to see whether there are trends related to whether one genre may outperform others. This could also help us to see what time of year is best to produce which genre.
 
 - What are some other possible tables and/or graphs that we could create?
 
-		-One possible table we could create would be comparing the average amount of backers across the same metrics. This could help us answer several questions: is there a correlation between overall success and the volume of backers? Do higher-dollar goals require more backers to be successful?
+	One possible table we could create would be comparing the average amount of backers across the same metrics. This could help us answer several questions: is there a correlation between overall success and the volume of backers? Do higher-dollar goals require more backers to be successful?
 	
-	-It would also be interesting to see whether the length of the fundraiser had any impact on it's success rate.
+	It would also be interesting to see whether the length of the fundraiser had any impact on it's success rate.
 		
 		-To produce this, we could use the same outline from our Outcomes Based on Goals sheet, and label the "Goal" column as "Length (in mo.)", then number the columns from 1-12
 	
