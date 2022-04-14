@@ -22,7 +22,8 @@ Our purpose is to determine if there is an optimal time to launch Kickstarters w
 	
 -From here, it was a matter of creating a line graph, where the x-axis represented months, while the y-axis shows the total sum of any given outcome (success, failure, cancellation,).
 	
-	-Here is my graph.![Theater Outcomes based on Launch Date](resources/Theater_Outcomes_vs_Launch.png)
+-Here is my graph.
+	![Theater Outcomes based on Launch Date](resources/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
 
